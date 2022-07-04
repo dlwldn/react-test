@@ -34,10 +34,15 @@ export default function useCheckAll<T>(prop: Prop<T>) {
         }
     };
 
+    const checkedDataInit = () => {
+        setCheckedData([]);
+    }
+
     return {
         checkAll,
         checkedData,
         setCheckedData,
+        checkedDataInit,
         _onChangeCheckAll,
     };
 }

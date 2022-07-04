@@ -20,9 +20,8 @@ export default function TypeGuardTest() {
         return (item as Animal).bat !== undefined
     }
     const test = (item: Animal | IU) => {
-        
         if(isAnimal(item)) {
-
+            
         } else {
             
         }
